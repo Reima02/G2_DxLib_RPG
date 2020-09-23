@@ -26,7 +26,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	int DrawX = 0;	//表示位置X
 	int DrawY = 0;	//表示位置Y
 
-	//▼▼▼▼▼ プログラム追加ここから ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
 	SetDrawScreen(DX_SCREEN_BACK);	//Draw系関数は裏画面に描画
 
 	//無限ループ
@@ -40,12 +39,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		ScreenFlip();		//モニタのリフレッシュレートの速さで裏画面を再描画
 	}
-	//▲▲▲▲▲ プログラム追加ここまで ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
-
-	//▽▽▽▽▽ プログラム削除ここから ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽
-	//DrawString(DrawX, DrawY, "Hello World", GetColor(255, 255, 255));	//文字を描画
-	//WaitKey();	//キー入力待ち
-	//△△△△△ プログラム削除ここまで △△△△△△△△△△△△△△△△△△△△
 
 	DxLib_End();	//ＤＸライブラリ使用の終了処理
 
